@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #2563eb;
+    padding: 10px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 100%;
+}
+.img_div{
+    background-image: url('./images/pexels-cottonbro-studio-5083402.jpg');
+    background-size: 100%,100%;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    min-width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+.img_div >h1{
+    color: #f3f4f6;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
+.about{
+    background-color: #f3f4f6;
+}
+
+.about > h2 , p , .header-icon{
+    background-color: #f3f4f6;
+    padding: 10px;
+    font-weight: lighter;
+    color: #71717a;
+}
+.header-icon , i{
+    text-align: right;
+    padding: 10px;
+    color: black;
+}
+
+main{
+    width: 80%;
+    margin: 20px auto;
+    margin-top: 60px;
+}
+main> h2{
+    font-weight: lighter;
+}
+.my-portfolio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.port-content{
+    padding-bottom: 20px;
+    margin: 20px 0;
+    box-shadow: 1px 1px 3px #4b5563;
+}
+.projects{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.tog{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+.tog > div > i{
+    padding: 5px;
+}
+
+/* footer */
+footer{
+    background-color: #2563eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+footer > div > p{
+    background-color: #2563eb;
+    color: #fff;
+}
+.img_footer{
+    background-image: url('images/pexels-tima-miroshnichenko-5702419.jpg');
+    background-size: cover;
+    background-position: center;
+    min-width: 600px;
+    height: 400px;
+}
+.text-area> a{
+    color: #fff;
+    text-decoration: none;
+}
+.text-area> a>i,address{
+    color: #fff;
+}
+.fott{
+    font-size: 30px;
+}
+.text-area h2{
+    color: #fff;
+}
+
+
+@media (max-width:1024px){
+    header{
+        padding: 20px;
+    }
+    .img_div{
+        min-width: 350px;
+        height: 350px;
+        background-position: bottom;
+    }
+    main{
+        width: 90%;
+    }
+    footer{
+        padding: 20px 50px;
+        gap: 10px;
+    }
+    .img_footer{
+        min-width: 450px;
+        height: 450px;
+    }
+   
+}
+@media (max-width:650px){
+    header{
+        padding: 10px;
+    }
+    .img_div{
+        flex-shrink: 1;
+        min-width: 200px;
+        height:200px;
+        background-position: bottom;
+    }
+    .about > h2 , p , .header-icon{
+        padding: 5px;
+    }
+    main{
+        width: 95%;
+    }
+    .my-portfolio{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        padding: 20px 50px;
+        gap: 10px;
+    }
+    .img_footer{
+        min-width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width:480px){
+    header{
+        padding: 5px;
+        border-bottom-right-radius: 80%;
+        background-color: none;
+        display: block;
+        height: 200px;
+        margin-bottom: 500px;
+    }
+    .img_div{
+        background-position: bottom;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 400px;
+        padding: 20px;
+        margin: 10px auto;
+    }
+    .about{
+        background-color: none;
+    }
+    
+    .my-portfolio{
+        display: block;
+    }
+    footer{
+        padding: 0;
+        gap: 10px;
+        display: block;
+    }
+    .img_footer{
+        min-width: 150px;
+        height: 250px;
+    }
+    .fott{
+        text-align: center;
+    }
+    .text-area{
+        padding: 10px;
+    }
+}
